@@ -1,0 +1,28 @@
+@import "reset";
+@import "typography";
+$mobile-width: 599px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin samsung-s3-lite{
+   @media (device-width:600px) and (device-height:1028px){
+      @content;
+   }
+}
+@mixin mobile {
+   @media (max-width: $mobile-width) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      @content;
+   }
+}
+
+@mixin desktop {
+   @media (min-width: $desktop-width) {
+      @content;
+   }
+}

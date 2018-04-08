@@ -1,0 +1,27 @@
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px; }
+
+header {
+  padding: 1.2 rem; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      background: red; } }
+  @media (min-width: 1024px) {
+    header {
+      background: yellow; } }
+  @media (max-width: 599px) {
+    header {
+      background: green; } }
+  @media (device-width: 600px) and (device-height: 1028px) {
+    header {
+      background: orange; } }
+  header .form-control {
+    font-family: "FontAwesome"; }
+
+ul li {
+  display: inline-flex;
+  width: 8rem;
+  padding: 1rem; }
